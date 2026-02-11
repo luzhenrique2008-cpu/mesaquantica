@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa Quântica Estelar Nova Era - Benefícios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+        }
+        .font-cinzel {
+            font-family: 'Cinzel', serif;
+        }
+        .slide {
+            display: none;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        .slide.active {
+            display: flex;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .float-anim {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.5); }
+            50% { box-shadow: 0 0 40px rgba(139, 92, 246, 0.8), 0 0 60px rgba(236, 72, 153, 0.4); }
+        }
+        .glow-effect {
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .cosmic-bg {
+            background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+        }
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle var(--duration) ease-in-out infinite;
+        }
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+        .benefit-card {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .benefit-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+            border-color: rgba(251, 191, 36, 0.5);
+        }
+        .price-tag {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            box-shadow: 0 10px 40px rgba(220, 38, 38, 0.4);
+        }
+        .cta-button {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 60px rgba(251, 191, 36, 0.4);
+        }
+        .progress-bar {
+            transition: width 0.5s ease;
+        }
+    </style>
+<base target="_blank">
+</head>
+<body class="cosmic-bg text-white min-h-screen">
+
+    <!-- Estrelas animadas -->
+    <div class="stars" id="stars"></div>
+
+    <!-- Container principal -->
+    <div class="relative z-10 min-h-screen flex flex-col">
+
+        <!-- Barra de progresso -->
+        <div class="fixed top-0 left-0 w-full h-1 bg-gray-800 z-50">
+            <div class="progress-bar h-full bg-gradient-to-r from-amber-400 to-purple-500" id="progressBar" style="width: 0%"></div>
+        </div>
+
+        <!-- SLIDE 1: Capa -->
+        <div class="slide active min-h-screen flex-col items-center justify-center px-6 relative" id="slide1">
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-amber-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style="animation-delay: 1s;"></div>
+            </div>
+            
+            <div class="text-center z-10 max-w-4xl">
+                <div class="mb-6 inline-block">
+                    <i class="fas fa-infinity text-6xl text-amber-400 float-anim"></i>
+                </div>
+                <h1 class="font-cinzel text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    Mesa Quântica<br>
+                    <span class="gradient-text">Estelar Nova Era</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 font-light">
+                    Transforme sua vida através da ciência quântica e consciência expandida
+                </p>
+                <div class="flex items-center justify-center gap-4 text-sm text-gray-400">
+                    <span class="flex items-center gap-2"><i class="fas fa-atom text-purple-400"></i> Física Quântica</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-star text-amber-400"></i> Radiestesia</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-broadcast-tower text-purple-400"></i> Psionica</span>
+                </div>
+            </div>
+            
+            <div class="absolute bottom-10 animate-bounce">
+                <i class="fas fa-chevron-down text-2xl text-amber-400"></i>
+            </div>
+        </div>
+
+        <!-- SLIDE 2: O que é -->
+        <div class="slide min-h-screen flex-col items-center justify-center px-6" id="slide2">
+            <div class="max-w-5xl w-full grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-cinzel text-4xl md:text-5xl font-bold mb-6 text-amber-400">
+                        O que é a<br>Mesa Quântica?
+                    </h2>
+                    <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                        Uma ferramenta revolucionária de alta tecnologia que transcende limites conhecidos, 
+                        baseada em quatro ciências fundamentais:
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 benefit-card p-4 rounded-xl">
+                            <div class="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center">
+                                <i class="fas fa-atom text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-amber-400">Física Quântica</h4>
+                                <p class="text-sm text-gray-400">Manipulação de frequências energéticas</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 benefit-card p-4 rounded-xl">
+                            <div class="w-12 h-12 rounded-full bg-amber-600 flex items-center justify-center">
+                                <i class="fas fa-compass text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-amber-400">Radiestesia</h4>
+                                <p class="text-sm text-gray-400">Detecção de energias e vibrações</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 benefit-card p-4 rounded-xl">
+                            <div class="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center">
+                                <i class="fas fa-broadcast-tower text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-amber-400">Radiônica</h4>
+                                <p class="text-sm text-gray-400">Transmissão de frequências curativas</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 benefit-card p-4 rounded-xl">
+                            <div class="w-12 h-12 rounded-full bg-amber-600 flex items-center justify-center">
+                                <i class="fas fa-brain text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-amber-400">Psionica</h4>
+                                <p class="text-sm text-gray-400">Emissão mental de frequências</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-amber-500 rounded-full filter blur-3xl opacity-30"></div>
+                    <div class="relative benefit-card rounded-3xl p-8 text-center">
+                        <i class="fas fa-yin-yang text-8xl text-amber-400 mb-6 float-anim"></i>
+                        <p class="text-lg italic text-gray-300">
+                            "A MQE Nova Era transmuta frequências desequilibradas em dimensões inferiores, 
+                            reconectando você com sua essência divina."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 3: Benefícios Físicos e Emocionais -->
+        <div class="slide min-h-screen flex-col items-center justify-center px-6" id="slide3">
+            <h2 class="font-cinzel text-4xl md:text-5xl font-bold mb-12 text-center text-amber-400">
+                Benefícios para seu<br>Bem-Estar Completo
+            </h2>
+            
+            <div class="max-w-6xl w-full grid md:grid-cols-3 gap-6">
+                <div class="benefit-card rounded-2xl p-6 text-center group">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i class="fas fa-heart text-2xl text-white"></i>
+                    </div>
+                    <h3 class="font-cinzel text-xl font-bold mb-3 text-amber-400">Saúde Física</h3>
+                    <ul class="text-sm text-gray-300 space-y-2 text-left">
+                        <li><i class="fas fa-check text-amber-400 mr-2"></i>Fortalecimento do sistema imunológico</li>
+                        <li><i class="fas fa-check text-amber-400 mr-2"></i>Alinhamento dos chakras</li>
+                        <li><i class="fas fa-check text-amber-400 mr-2"></i>Melhora na qualidade do sono</li>
+                        <li><i class="fas fa-check text-amber-400 mr-2"></i>Alívio do estresse e ansiedade</li>
+                    </ul>
+                </div>
+
+                <div class="benefit-card rounded-2xl p-6 text-center group">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i class="fas fa-brain text-2xl text-white"></i>
+                    </div>
+                    <h3 class="font-cinzel text-xl font-bold mb-3 text-amber-400">Mental & Emocional</h3>
+                    <ul class="text-sm text-gray-300 space-y-2 text-left">
+                        <li><i class="fas fa-check text-amber-400 mr-2"></i>Clareza mental e foco</li>
+                        <li><i class="fas fa-check text-amber-400 mr-2"></i>Autoconhecimento profundo</li>
+                        <li><i class="fas fa-check text-amber-400 mr-2"></i>Elevação da autoestima</li>
+                        <li><i class="fas fa-check text-amber-400 mr-2"></i>Equilíbrio emocional</li>
+                    </ul>
+                </div>
+
+                <div class="benefit-card rounded-2xl p-6 text-center group">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-500 to-amber-500 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i class="fas fa-sparkles text-2xl text-white"></i>
+                    </div>
+                    <h3 class="font-cinzel text-xl font-bold mb-3 text-amber-400">Espiritual</h3>
+                    <ul class="text-sm text-gray-300 space-y-2 text-left">
+                        <li><i class="fas fa-check text-amber-400 mr-2"></i>Conexão com o divino</li>
+                        <li><i class="fas fa-check text-amber-400 mr-2"></i>Expansão da consciência</li>
+                        <li><i class="fas fa-check text-amber-400 mr-2"></i>Proteção espiritual</li>
+                        <li><i class="fas fa-check text-amber-400 mr-2"></i>Limpeza de energias densas</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 benefit-card rounded-2xl p-6 max-w-3xl">
+                <div class="flex items-center gap-4">
+                    <i class="fas fa-quote-left text-3xl text-amber-400"></i>
+                    <p class="text-lg text-gray-300 italic">
+                        "Detecta e transmuta energias densas de vidas passadas, magia negativa, 
+                        inveja e maldições, abrindo caminhos para uma nova realidade."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 4: Áreas da Vida -->
+        <div class="slide min-h-screen flex-col items-center justify-center px-6" id="slide4">
+            <h2 class="font-cinzel text-4xl md:text-5xl font-bold mb-4 text-center text-amber-400">
+                Transforme Todas as<br>Áreas da Sua Vida
+            </h2>
+            <p class="text-gray-400 mb-12 text-center max-w-2xl">
+                A Mesa Quântica atua em diferentes dimensões do seu existir, promovendo harmonia integral
+            </p>
+
+            <div class="max-w-5xl w-full grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="benefit-card rounded-xl p-6 text-center hover:bg-purple-900/30 transition-all cursor-pointer">
+                    <i class="fas fa-coins text-4xl text-amber-400 mb-3"></i>
+                    <h4 class="font-semibold">Finanças</h4>
+                    <p class="text-xs text-gray-400 mt-2">Abundância e prosperidade</p>
+                </div>
+                <div class="benefit-card rounded-xl p-6 text-center hover:bg-purple-900/30 transition-all cursor-pointer">
+                    <i class="fas fa-heart text-4xl text-pink-400 mb-3"></i>
+                    <h4 class="font-semibold">Relacionamentos</h4>
+                    <p class="text-xs text-gray-400 mt-2">Amor e harmonia</p>
+                </div>
+                <div class="benefit-card rounded-xl p-6 text-center hover:bg-purple-900/30 transition-all cursor-pointer">
+                    <i class="fas fa-briefcase text-4xl text-blue-400 mb-3"></i>
+                    <h4 class="font-semibold">Carreira</h4>
+                    <p class="text-xs text-gray-400 mt-2">Propósito e realização</p>
+                </div>
+                <div class="benefit-card rounded-xl p-6 text-center hover:bg-purple-900/30 transition-all cursor-pointer">
+                    <i class="fas fa-home text-4xl text-green-400 mb-3"></i>
+                    <h4 class="font-semibold">Família</h4>
+                    <p class="text-xs text-gray-400 mt-2">Paz e união</p>
+                </div>
+                <div class="benefit-card rounded-xl p-6 text-center hover:bg-purple-900/30 transition-all cursor-pointer">
+                    <i class="fas fa-graduation-cap text-4xl text-yellow-400 mb-3"></i>
+                    <h4 class="font-semibold">Estudos</h4>
+                    <p class="text-xs text-gray-400 mt-2">Concentração e aprovação</p>
+                </div>
+                <div class="benefit-card rounded-xl p-6 text-center hover:bg-purple-900/30 transition-all cursor-pointer">
+                    <i class="fas fa-user-shield text-4xl text-red-400 mb-3"></i>
+                    <h4 class="font-semibold">Proteção</h4>
+                    <p class="text-xs text-gray-400 mt-2">Contra energias negativas</p>
+                </div>
+                <div class="benefit-card rounded-xl p-6 text-center hover:bg-purple-900/30 transition-all cursor-pointer">
+                    <i class="fas fa-dna text-4xl text-purple-400 mb-3"></i>
+                    <h4 class="font-semibold">Ancestralidade</h4>
+                    <p class="text-xs text-gray-400 mt-2">Cura de padrões herdados</p>
+                </div>
+                <div class="benefit-card rounded-xl p-6 text-center hover:bg-purple-900/30 transition-all cursor-pointer">
+                    <i class="fas fa-infinity text-4xl text-cyan-400 mb-3"></i>
+                    <h4 class="font-semibold">Propósito</h4>
+                    <p class="text-xs text-gray-400 mt-2">Missão de vida</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 5: Como Funciona -->
+        <div class="slide min-h-screen flex-col items-center justify-center px-6" id="slide5">
+            <h2 class="font-cinzel text-4xl md:text-5xl font-bold mb-12 text-center text-amber-400">
+                Como Funciona a Sessão?
+            </h2>
+
+            <div class="max-w-5xl w-full">
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="relative">
+                        <div class="benefit-card rounded-2xl p-6 text-center h-full">
+                            <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-amber-500 text-black font-bold text-xl flex items-center justify-center font-cinzel">1</div>
+                            <h4 class="font-semibold text-amber-400 mb-2">Conexão</h4>
+                            <p class="text-sm text-gray-300">Conectamos com seu supraconsciente e os Comandos Estelares de Luz</p>
+                        </div>
+                        <div class="hidden md:block absolute top-1/2 -right-3 text-amber-400">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="benefit-card rounded-2xl p-6 text-center h-full">
+                            <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-amber-500 text-black font-bold text-xl flex items-center justify-center font-cinzel">2</div>
+                            <h4 class="font-semibold text-amber-400 mb-2">Diagnóstico</h4>
+                            <p class="text-sm text-gray-300">Identificamos bloqueios, crenças limitantes e desequilíbrios energéticos</p>
+                        </div>
+                        <div class="hidden md:block absolute top-1/2 -right-3 text-amber-400">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="benefit-card rounded-2xl p-6 text-center h-full">
+                            <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-amber-500 text-black font-bold text-xl flex items-center justify-center font-cinzel">3</div>
+                            <h4 class="font-semibold text-amber-400 mb-2">Transmutação</h4>
+                            <p class="text-sm text-gray-300">Enviamos frequências quânticas para transmutar energias densas</p>
+                        </div>
+                        <div class="hidden md:block absolute top-1/2 -right-3 text-amber-400">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
